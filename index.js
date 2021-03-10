@@ -50,7 +50,8 @@ function monitor() {
                     for (let z of t.availability.times) {
                         if (z.timeslots.length !== 0) {
                             console.log(chalk.yellow(`Vaccine available at ${t.id} during ${z.timeslots[0].startTime}`))
-                            test.send(`Vaccine available at ${t.id} during ${z.timeslots[0].startTime}`)
+                            // Optional Discord alerts
+                            // test.send(`Vaccine available at ${t.id} during ${z.timeslots[0].startTime}`)
                         }
                     }
                 }
