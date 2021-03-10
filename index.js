@@ -49,7 +49,7 @@ function monitor() {
                 for (let t of res.body.data.providerLocations) {
                     for (let z of t.availability.times) {
                         if (z.timeslots.length !== 0) {
-                            console.log(chalk.yellow(`Vaccine available at ${t.id} during ${z.timeslots[0].startTime}`))
+                            console.log(chalk.yellow(`Vaccine available at ${t.id} during ${z.timeslots[0].startTime} - Link to book https://www.zocdoc.com/booking/start?startTime=&locationId=${t.location.monolithId}&professionalId=${t.provider.monolithId}&directoryId=-1&repeatPatient=false&procedureId=5243&widget=`))
                             // Optional Discord alerts
                             // test.send(`Vaccine available at ${t.id} during ${z.timeslots[0].startTime}`)
                         }
