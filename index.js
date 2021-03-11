@@ -6,6 +6,8 @@ const test = new Discord.WebhookClient('x', 'x')
 
 let delay = 8000 // Delay between checks
 let days = 21 // Total days in the future to check
+
+// Fill this with all the provider locations found by searching zocdoc (check readme)
 let locations = [
     'pr_t0QhtMhl-EmOOjyx8Iz9wx|lo_4NEHSgf8iEu8V74AiA46WR'
 ]
@@ -38,7 +40,9 @@ function monitor() {
     request.post(options, (err, res) => {
         if (res == undefined) {
             console.log(chalk.red(`Monitor timed out`))
+
             // Optional retry
+
             // setTimeout(function () {
             //     monitor()
             // }, 2500)
@@ -50,7 +54,9 @@ function monitor() {
                     for (let z of t.availability.times) {
                         if (z.timeslots.length !== 0) {
                             console.log(chalk.yellow(`Vaccine available at ${t.id} during ${z.timeslots[0].startTime} - Link to book https://www.zocdoc.com/booking/start?startTime=&locationId=${t.location.monolithId}&professionalId=${t.provider.monolithId}&directoryId=-1&repeatPatient=false&procedureId=5243&widget=`))
+                            
                             // Optional Discord alerts
+                            
                             // test.send(`Vaccine available at ${t.id} during ${z.timeslots[0].startTime}`)
                         }
                     }
