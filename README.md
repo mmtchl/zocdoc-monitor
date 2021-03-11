@@ -1,8 +1,8 @@
 ## Instructions
 1. Download ZIP or Clone repo
-2. run `npm install` to install required node packages
+2. Run `npm install` to install required node packages
 3. Update index.js variables with location from zocdoc website (instructions below)
-4. run `npm start` to start the monitor
+4. Run `npm start` to start the monitor
 
 ## Notes
 I don't know if they rate limit, raise delay to be safe if not using proxies
