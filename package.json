@@ -4,7 +4,7 @@
   "description": "zocdoc monitor for checking appointment availability in your area",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
   "homepage": "https://github.com/mmtchl/zocdoc-monitor#readme",
   "dependencies": {
     "chalk": "^4.1.0",
+    "console-stamp": "^0.2.9",
     "discord.js": "^12.5.1",
     "request": "^2.88.2"
   }
