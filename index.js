@@ -4,7 +4,7 @@ const chalk = require('chalk')
 const Discord = require('discord.js')
 const test = new Discord.WebhookClient('x', 'x')
 
-let delay = 8000 // Delay between checks
+let delay = 8000 // Delay between checks in milliseconds
 let days = 21 // Total days in the future to check
 
 // Fill this with all the provider locations found by searching zocdoc (check readme)
