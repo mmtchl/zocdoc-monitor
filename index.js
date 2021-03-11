@@ -2,7 +2,8 @@ require('console-stamp')(console, { pattern: 'HH:MM:ss.l', label: false })
 const request = require('request')
 const chalk = require('chalk')
 const Discord = require('discord.js')
-const test = new Discord.WebhookClient('x', 'x')
+
+const test = new Discord.WebhookClient('x', 'x') //Discord webhook information
 
 let delay = 25000 // Delay between checks in milliseconds
 let days = 21 // Total days in the future to check
