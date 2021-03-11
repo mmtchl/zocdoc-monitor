@@ -1,0 +1,24 @@
+{
+  "name": "zocdoc-monitor",
+  "version": "1.0.0",
+  "description": "I don't know if they rate limit, raise delay to be safe if not using proxies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Balbi/zocdoc-monitor.git"
+  },
+  "author": "@mmtchl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Balbi/zocdoc-monitor/issues"
+  },
+  "homepage": "https://github.com/Balbi/zocdoc-monitor#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "discord.js": "^12.5.1",
+    "request": "^2.88.2"
+  }
+}
