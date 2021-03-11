@@ -6,4 +6,4 @@ Fill locations array with all provider locations you'd like to monitor (search "
 
 Fill in Discord webhook information if you'd like discord notifications
 
-Code > Download Zip > Unzip > Run index.js using node
+Code > Download Zip > Unzip > run `npm install` from folder > run `npm start`
